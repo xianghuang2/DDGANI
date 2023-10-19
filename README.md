@@ -2,6 +2,7 @@
 Missing Value Imputation using Denoising Diffusion GAN with Modular Plugins
 
 To run this project, you may need to set up the following environment:
+
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install pandas
 conda install scikit-learn
