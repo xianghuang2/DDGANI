@@ -1,0 +1,21 @@
+[
+	{	"name":"adult",
+	"file_path":"dataset/mix datasets/adult.csv",
+	"T": 6,
+	"categorical_cols": [1, 3, 4, 5, 6, 7, 8, 9, 13],
+	"top_k": 0.05,
+	"lr":0.0001,
+	"epochs":5000,
+	"batch_size":128,
+    "model_name":"minmax",
+	"loss_weight": {
+		"Res_weight": 100,
+		"L_weight": 1.0,
+		"D_weight": 0.1,
+		"G_D_weight": 1,
+		"FD_weight": 1
+	},
+	"use_Learner": "True",
+	"use_FD": "True"
+}
+]
