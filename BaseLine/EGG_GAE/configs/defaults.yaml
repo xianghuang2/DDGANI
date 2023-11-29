@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+  - dataloader: dataloader
+  - model: kegg_model    # Options: egg_model, kegg_model
+
+trainer:
+  cuda_number: '0'
+  gpus: 1
+  is_logger_enabled: false
+  check_val_every_n_epoch: 9
+  log_every_n_steps: 25         
+  make_checkpoint: True
+  checkpoint_path: {}
+  
+wadb:
+  logger_project_name: project_name
+  logger_name: logger_name
+  entity: entity_name
+
+seed_everything: 42
+
+
+

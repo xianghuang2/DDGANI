@@ -1,0 +1,48 @@
+dataset_type: CustomDataset
+
+
+dataset_name: tax # Options: SUSY-small, Adult, yeast, abalone, red_wine
+
+val_size: 0.2
+#test_size: 0.2
+
+data_seed: 1
+min_sample_predictions: 5       # Ensemble itterations
+experiment_name: 'no_exp'
+
+# Dataloader parameters 
+num_workers: 5                  # Keep 1 for now, weird behaviour
+
+
+# --- Dataloader ---
+train_graph_size: 100
+train_n_batches: None         # Equal to: dataset_size/train_graph_size
+
+# --- Validation/Test ---
+val_graph_size: 100
+val_seed: 0                   # SEED the validation missigness
+
+#test_graph_size: 300
+#test_seed: 0                   # SEED the validation missigness
+
+fly_corrupt: 0.2
+
+
+# Imputation parameters
+# Move it into separate file
+miss_algo: Region
+imputation:
+  init_corrupt: 0.2
+  fill_val: -999            # FIX THIS VALUES, NEVER CHANGE
+  seed: 100                 # This seed controls the noise which is introduced initially into dataset
+  cat_emb_dim: 8
+  scale_type: StandardScaler  #StandardScaler MinMaxScaler
+  # Estimated from dataset
+  num_idx: {}
+  cat_idx: {}
+  cat_dims: {}
+  CatFillWith: {}
+  MostFreqClass: {}
+
+
+
