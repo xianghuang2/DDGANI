@@ -77,11 +77,17 @@ if __name__ == "__main__":
         # fill_data_np = MissForest.fill_data_missForest(data_m, nan_data, continuous_cols, categorical_cols)
 
         # KNNI
-        # fill_data_mean_np = KNNI.sim_impute(nan_data, continuous_cols, categorical_cols, data_m)
+        # fill_data_np = KNNI.sim_impute(nan_data, continuous_cols, categorical_cols, data_m)
 
         # GAIN
         # fill_data_np = GAIN.get_GAIN_filled(data_m, nan_data, continuous_cols, categorical_cols,value_cat, enc, values, device)
-
+         # fill_data_mean = pd.DataFrame(fill_data_np,columns=values)
+        # cat_to_code_data, enc = categorical_to_code(ori_data.copy(), value_cat, enc)
+        # cat_to_code_data.columns = [x for x in range(cat_to_code_data.shape[1])]
+        # fields, feed_data = Data_convert(cat_to_code_data, model_name, continuous_cols)
+        # impute_data_code = torch.tensor(feed_data.values, dtype=torch.float).to(device)
+        # acc = get_down_acc(fill_data_mean, label_data, val_data, label_num, device, value_cat, continuous_cols, enc)
+        # RMSE, MAE = utils.util.errorLoss(fill_data_mean, ori_data, data_m, value_cat, continuous_cols, enc)
         # VAIM
         # RMSE, MAE, acc = VAIM.get_VAIM_filled(path, miss_rate,miss_data, data_m, nan_data, continuous_cols, categorical_cols,value_cat, enc, values, device, param, label_data, ori_data, label_num, val_data)
 
