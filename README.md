@@ -10,3 +10,4 @@ Additionally, you can customize the parameters in `param.json` within the `param
 
 You can execute the code and selectively activate certain plugins using the following command:
 python main.py --Data adult --MissType MCAR --MissRate 0.2 --UseAttention True --UseLearner True --UseFD True
+If you want to enable/disable a plugin, you only need to make the param False，like --UseFD False
