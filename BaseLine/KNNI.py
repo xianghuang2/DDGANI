@@ -7,7 +7,7 @@ from util import categorical_to_code
 
 
 def sim_impute(miss_data, con_cols, cat_cols, data_m):
-    fill_mean_data = Mean.fill_data_mean(miss_data, con_cols, cat_cols)
+    fill_mean_data = Mean.fill_data_mean(miss_data, con_cols)
     copy_ori_data = fill_mean_data.copy()
     copy_ori_data = pd.DataFrame(copy_ori_data)
     miss_code, enc = categorical_to_code(copy_ori_data, cat_cols, enc=None)

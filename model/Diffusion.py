@@ -1,4 +1,6 @@
 from abc import abstractmethod
+
+import pandas as pd
 from torch.cuda.amp import GradScaler
 from torch.nn import init
 import math
@@ -246,44 +248,39 @@ def train_one_epoch_Generator(model, discriminator_noise_x,DS, x, optimizer, los
     FD_loss = 0
     model.train()
     if epoch % 100 == 0:
-        with tqdm(total=x.shape[0] // 128, dynamic_ncols=True) as tq:
-            tq.set_description(f"Epoch: {epoch}/{total_epochs}")
-            epoch_num = timesteps
-            for epo in range(epoch_num):
-                X_0_batch, sample_data_index = sample_x(x, 128)
-                M_sample = M[sample_data_index]
-                m_sample = m_data[sample_data_index]
-                zero_feed_sample = zero_feed_data[sample_data_index]
-                tq.update(1)
-                # Assign a batch of timesteps to each X0 sample
-                batch_timesteps = torch.randint(low=2, high=timesteps+1, size=(X_0_batch.shape[0],), device=device)
-                # Diffuse the batch of X0 to their required step of t
-                X_t_batch, batch_noise = forward_diffusion(DS, X_0_batch, batch_timesteps)
-                with amp.autocast():
-                    Pred_x0 = model(X_t_batch, batch_timesteps)
-                    Res_loss = res_loss_func(field,Pred_x0,X_0_batch,M_sample)
-                    G_D_loss = G_d_loss_func(DS,Pred_x0,X_t_batch,X_0_batch,batch_timesteps, discriminator_noise_x, M_sample, batch_noise, m_sample)
-                    decoder_z_impute = zero_feed_sample + (1 - M_sample) * Pred_x0
-                    FD_loss = Diffusion_FD_loss(decoder_z_impute, FDs_model_list, fields)
-                    # FD_loss = 0
-                    loss = Res_loss * loss_weight['Res_weight'] + G_D_loss * loss_weight['G_D_weight'] + FD_loss * loss_weight['FD_weight'] + other_loss
-                # optimizer and scaler do the loss bp and update
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
-                # loss_scaler.scale(loss).backward()
-                # loss_scaler.step(optimizer)
-                # loss_scaler.update()
-                # log the noise predication loss
-                loss_value = loss.detach().item()
-                loss_record.update(loss_value)
-                # tqdm print loss val
-                tq.set_postfix_str(s=f"Loss: {loss_value:.4f}")
-                tq.set_postfix_str(s=f"G_FLoss: {G_D_loss * loss_weight['G_D_weight']:.4f}")
-            # MeanMetric calculate loss mean
-            mean_loss = loss_record.compute().item()
-            # tqdm print mean_loss val
-            # tq.set_postfix_str(s=f"Epoch Loss: {mean_loss:.4f}")
+        epoch_num = timesteps
+        for epo in range(epoch_num):
+            X_0_batch, sample_data_index = sample_x(x, 128)
+            M_sample = M[sample_data_index]
+            m_sample = m_data[sample_data_index]
+            zero_feed_sample = zero_feed_data[sample_data_index]
+
+            # Assign a batch of timesteps to each X0 sample
+            batch_timesteps = torch.randint(low=2, high=timesteps+1, size=(X_0_batch.shape[0],), device=device)
+            # Diffuse the batch of X0 to their required step of t
+            X_t_batch, batch_noise = forward_diffusion(DS, X_0_batch, batch_timesteps)
+            with amp.autocast():
+                Pred_x0 = model(X_t_batch, batch_timesteps)
+                Res_loss = res_loss_func(field,Pred_x0,X_0_batch,M_sample)
+                G_D_loss = G_d_loss_func(DS,Pred_x0,X_t_batch,X_0_batch,batch_timesteps, discriminator_noise_x, M_sample, batch_noise, m_sample)
+                decoder_z_impute = zero_feed_sample + (1 - M_sample) * Pred_x0
+                FD_loss = Diffusion_FD_loss(decoder_z_impute, FDs_model_list, fields)
+                # FD_loss = 0
+                loss = Res_loss * loss_weight['Res_weight'] + G_D_loss * loss_weight['G_D_weight'] + FD_loss * loss_weight['FD_weight'] + other_loss
+            # optimizer and scaler do the loss bp and update
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            # loss_scaler.scale(loss).backward()
+            # loss_scaler.step(optimizer)
+            # loss_scaler.update()
+            # log the noise predication loss
+            loss_value = loss.detach().item()
+            loss_record.update(loss_value)
+        # MeanMetric calculate loss mean
+        mean_loss = loss_record.compute().item()
+        # tqdm print mean_loss val
+        # tq.set_postfix_str(s=f"Epoch Loss: {mean_loss:.4f}")
     else:
         epoch_num = timesteps
         for epo in range(epoch_num):
@@ -325,36 +322,34 @@ def train_one_epoch_discriminator_noise_x(generator_x0, discriminator_noise_x, D
     loss_record = MeanMetric()
     discriminator_noise_x.train()
     if epoch % 100 == 0:
-        with tqdm(total=x.shape[0] // 128, dynamic_ncols=True) as tq:
-            tq.set_description(f"Epoch: {epoch}/{total_epochs}")
-            epoch_num = timesteps
-            for epo in range(epoch_num):
-                X_0_batch, sample_data_index = sample_x(x, 128)
-                M_sample = M[sample_data_index]
-                m_sample = m_data[sample_data_index]
-                tq.update(1)
-                # Assign a batch of timesteps to each X0 sample
-                batch_timesteps = torch.randint(low=2, high=timesteps+1, size=(X_0_batch.shape[0],), device=device)
-                # Diffuse the batch of X0 to their required step of t
-                X_t_batch, batch_noise = forward_diffusion(DS, X_0_batch, batch_timesteps)
-                with amp.autocast():
-                    Pred_x0 = generator_x0(X_t_batch, batch_timesteps)
-                    G_D_loss = D_loss_func(DS, Pred_x0, X_t_batch, X_0_batch, batch_timesteps, discriminator_noise_x, M_sample,batch_noise, m_sample)
-                    loss = G_D_loss * loss_weight['D_weight']
-                # optimizer and scaler do the loss bp and update
-                optimizer.zero_grad(set_to_none=True)
-                loss_scaler.scale(loss).backward()
-                loss_scaler.step(optimizer)
-                loss_scaler.update()
-                # log the noise predication loss
-                loss_value = loss.detach().item()
-                loss_record.update(loss_value)
-                # tqdm print loss val
-                tq.set_postfix_str(s=f"Loss: {loss_value:.4f}")
-            # MeanMetric calculate loss mean
-            mean_loss = loss_record.compute().item()
-            # tqdm print mean_loss val
-            tq.set_postfix_str(s=f"Epoch Loss: {mean_loss:.4f}")
+        epoch_num = timesteps
+        for epo in range(epoch_num):
+            X_0_batch, sample_data_index = sample_x(x, 128)
+            M_sample = M[sample_data_index]
+            m_sample = m_data[sample_data_index]
+
+            # Assign a batch of timesteps to each X0 sample
+            batch_timesteps = torch.randint(low=2, high=timesteps+1, size=(X_0_batch.shape[0],), device=device)
+            # Diffuse the batch of X0 to their required step of t
+            X_t_batch, batch_noise = forward_diffusion(DS, X_0_batch, batch_timesteps)
+            with amp.autocast():
+                Pred_x0 = generator_x0(X_t_batch, batch_timesteps)
+                G_D_loss = D_loss_func(DS, Pred_x0, X_t_batch, X_0_batch, batch_timesteps, discriminator_noise_x, M_sample,batch_noise, m_sample)
+                loss = G_D_loss * loss_weight['D_weight']
+            # optimizer and scaler do the loss bp and update
+            optimizer.zero_grad(set_to_none=True)
+            loss_scaler.scale(loss).backward()
+            loss_scaler.step(optimizer)
+            loss_scaler.update()
+            # log the noise predication loss
+            loss_value = loss.detach().item()
+            loss_record.update(loss_value)
+            # tqdm print loss val
+
+        # MeanMetric calculate loss mean
+        mean_loss = loss_record.compute().item()
+        # tqdm print mean_loss val
+
     else:
         epoch_num = timesteps
         for epo in range(epoch_num):
@@ -407,6 +402,13 @@ def get_xt(DS, x_0, timestep):
     sample = mean + std_dev * eps
     return sample
 
+def get_xt_xj1(DS, x_tj1, timestep):
+    eps = torch.randn_like(x_tj1)
+    mean = get(DS.sqrt_alphas, idxs=timestep) * x_tj1    #[B, 1] * [B, D] = [B, D]
+    std_dev = get(DS.betas, idxs=timestep)
+    sample = mean + std_dev * eps
+    return sample
+
 def G_D_onestep(generator_x0, DS, x_t, timestep, M, x):
     batch_noise = torch.randn_like(x)
     Pred_x0 = generator_x0(x_t, timestep)
@@ -421,16 +423,20 @@ def G_D_onestep(generator_x0, DS, x_t, timestep, M, x):
     xtj1 = M * xtj1_o + (1 - M) * xtj1_g
     return xtj1
 
-def reverse_diffusion_G_D_sample(generator_x,discriminator_noise_x, DS, timesteps, no, dim, device, x,M_tensor):
+def reverse_diffusion_G_D_sample(generator_x,discriminator_noise_x, DS, timesteps, no, dim, device, x, M_tensor):
     timesteps_cur = timesteps
     x_t = get_xt(DS, x, torch.randint(low=timesteps_cur, high=timesteps_cur+1, size=(no,), device=device))  # the first X_t
-    seq = [x_t]
-    for time_step in tqdm(iterable=reversed(range(2, timesteps_cur+1)), total=timesteps-1, dynamic_ncols=False,
-                          desc="Sampling :: ", position=0):
+    # seq = [x_t]
+
+    for time_step in reversed(range(2, timesteps_cur+1)):
         timesteps_batch = torch.ones(no, dtype=torch.long, device=device) * time_step
         if time_step > 2:
-            x_t = G_D_onestep(generator_x, DS, x_t,timesteps_batch, M_tensor, x)
-            seq.append(x_t)
+            # x_he_t = x_t
+            # for i in range(5):
+            #     x_t = G_D_onestep(generator_x, DS, x_he_t,timesteps_batch, M_tensor, x)
+            #     x_he_t = get_xt_xj1(DS, x_t, timesteps_batch)
+            x_t = G_D_onestep(generator_x, DS, x_t, timesteps_batch, M_tensor, x)
+            # seq.append(x_t)
         else:
             x_t = generator_x(x_t,timesteps_batch)
             X_t_batch, batch_noise = forward_diffusion(DS, x, timesteps_batch)
@@ -467,7 +473,7 @@ def res_loss_func(fields, reconstruct, x, M):
             pre = reconstruct[good_rows,  curr:curr + dim] + 1e-6
             lab = x[good_rows, curr:curr + dim]
             label = torch.argmax(lab, dim=1)
-            loss = -torch.mean(torch.log(torch.sum(pre * lab, dim=1)))
+            loss = -torch.mean(torch.log(torch.sum(pre * lab, dim=1) + torch.tensor(1e-6)))
             BCE += loss
             BCE_num = BCE_num + 1
         curr += dim
@@ -516,7 +522,7 @@ def D_loss_func(DS, Pred_x0, X_t_batch, X_0_batch, timestep, discriminator_noise
     a = discriminator_out.cpu().detach().numpy()
     loss = -torch.mean((1 - m_data) * torch.log(1 - discriminator_out + 1e-4) + m_data * torch.log(discriminator_out + 1e-4))
     if loss is None:
-        print(1)
+        print("|")
     return loss
 
 def Diffusion_FD_loss(Pred_x0, FDs_model_list, fields):
@@ -545,6 +551,7 @@ def get_cell_true_diffusion(generator_data, zero_feed_data, fields, data_m, cont
 def train_diffusion_discriminator(discriminator, generator_x,discriminator_noise_x, FDs_model_list, num_steps,epochs, lr, batch_size, loss_weight, data_m, impute_data_code, label_data, fields, value_cat, values,miss_data_x,enc,ori_data,continuous_cols,label_num,device,use_Learner):
     print("------------------Diffusion Discriminator train--------------------")
     eq_dict = get_eq_dict(values, miss_data_x.copy(), data_m)
+    impute_data = None
     torch.manual_seed(3047)
     if device == torch.device('cuda:0'):
         generator_x.cuda()
@@ -554,7 +561,7 @@ def train_diffusion_discriminator(discriminator, generator_x,discriminator_noise
     zero_feed_data = M_tensor * impute_data_code
     x = impute_data_code.to(device)
     # Retrieve the validation set of the learner.
-    if use_Learner == 'True':
+    if use_Learner == 'True' or True:
         valid_data_index = get_valid_data_index(data_m, discriminator, impute_data_code, device)
         train_data_index = [i for i in range(len(data_m)) if i not in valid_data_index]
         valid_data_code = zero_feed_data[valid_data_index]
@@ -572,28 +579,30 @@ def train_diffusion_discriminator(discriminator, generator_x,discriminator_noise
     learner_acc_list = []
     generator_loss_list = []
     no, dim = x.shape
-    dataload = torch.utils.data.DataLoader(x, batch_size=batch_size, shuffle=True)
+    dataload = torch.utils.data.DataLoader(x, batch_size=batch_size, shuffle=False)
     DS = Diffusion_setting(num_steps, dim, device)
     total_epochs = epochs
     L_loss = 0
     cost_time = 0
-    rmse_list,mae_list,acc_list = [], [], []
-    for epoch in range(1, total_epochs + 1):
+    r_M = 9999
+    b_e = 0
+    for epoch in tqdm(range(1, total_epochs+1)):
         other_loss = L_loss * loss_weight['L_weight']
         generator_x.train()
         train_one_epoch_Generator(generator_x, discriminator_noise_x, DS, x, optimizer_G, GradScaler(),other_loss, epoch, total_epochs, num_steps, device, fields,M_tensor,m_data,loss_weight,FDs_model_list, fields,zero_feed_data)
         train_one_epoch_discriminator_noise_x(generator_x, discriminator_noise_x, DS, x, optimizer_D, GradScaler(), other_loss, epoch, total_epochs, num_steps, device, fields, M_tensor, m_data, loss_weight)
-        if epoch % 10 == 0:
+        if epoch % 100 == 0:
+            # generator_x.eval()
             generator_data, discriminator_out = reverse_diffusion_G_D_sample(generator_x, discriminator_noise_x, DS,
                                                                              num_steps, no, dim, device, x, M_tensor)
             code = zero_feed_data + (1 - M_tensor) * generator_data
-            if len(FDs_model_list) != 0:
-                cell_acc = get_cell_true_diffusion(generator_data, zero_feed_data, fields, data_m, continuous_cols,
-                                         discriminator_out, M_tensor, value_cat, values, miss_data_x.copy(), enc, device)
-                new_FDs_model_list = update_FD_models(generator_data, zero_feed_data, fields, data_m, M_tensor, value_cat,
-                                                      values, miss_data_x.copy(), enc, device, eq_dict, FDs_model_list,
-                                                      cell_acc, continuous_cols, cost_time)
-                FDs_model_list = new_FDs_model_list
+            # if len(FDs_model_list) != 0:
+            #     cell_acc = get_cell_true_diffusion(generator_data, zero_feed_data, fields, data_m, continuous_cols,
+            #                              discriminator_out, M_tensor, value_cat, values, miss_data_x.copy(), enc, device)
+            #     new_FDs_model_list = update_FD_models(generator_data, zero_feed_data, fields, data_m, M_tensor, value_cat,
+            #                                           values, miss_data_x.copy(), enc, device, eq_dict, FDs_model_list,
+            #                                           cell_acc, continuous_cols, cost_time)
+            #     FDs_model_list = new_FDs_model_list
             if len(value_cat)>0:
                 current_ind = 0
                 for i in range(len(fields)):
@@ -604,36 +613,25 @@ def train_diffusion_discriminator(discriminator, generator_x,discriminator_noise
                         current_ind = current_ind + dim
                     else:
                         current_ind = current_ind + 1
-            cur_rmse, cur_mae = test_impute_data_rmse(code, fields, value_cat, values, miss_data_x.copy(), data_m, enc,
+
+            cur_r, cur_m = test_impute_data_rmse(code, fields, value_cat, values, miss_data_x.copy(), data_m, enc,
                                                       ori_data, continuous_cols)
-            rmse_list.append(cur_rmse)
-            mae_list.append(cur_mae)
-            print("Use_observe_u: ARMSE为:{},  AMAE为:{}".format(cur_rmse, cur_mae))
-            if use_Learner == 'True' and epoch % 100 == 0:
+            # fd_cols = [0, 1, 2, 3, 4, 5, 6]
+            # fd_rmse = test_fd_data_rmse(code, fields, value_cat, values, miss_data_x.copy(), data_m, enc, ori_data,
+            #                             continuous_cols, fd_cols)
+            if use_Learner == 'True':
                 x_train_code = code[train_data_index]
                 y_train_code = label_data_code[train_data_index]
                 L_loss, acc = train_L_code(1000, x_train_code, y_train_code, x_valid, y_valid, label_num, device)
             else:
-                acc = 0
                 L_loss = 0
-    ARMSE,AMAE = min(rmse_list),min(mae_list)
-
-    # test
-    #     generator_data, discriminator_out = reverse_diffusion_G_D_sample(generator_x, discriminator_noise_x, DS, num_steps,
-    #                                                                      no, dim, device, x, M_tensor)
-    #     code = zero_feed_data + (1 - M_tensor) * generator_data
-    #     if len(value_cat) > 0:
-    #         current_ind = 0
-    #         for i in range(len(fields)):
-    #             if fields[i].data_type == "Categorical Data":
-    #                 dim = fields[i].dim()
-    #                 data = nn.functional.softmax(code[:, current_ind:current_ind + dim], dim=1)
-    #                 code[:, current_ind:current_ind + dim] = data
-    #                 current_ind = current_ind + dim
-    #             else:
-    #                 current_ind = current_ind + 1
-    #     code = zero_feed_data + (1 - M_tensor) * generator_data
-    # ARMSE, AMAE = test_impute_data_rmse(code, fields, value_cat, values, miss_data_x.copy(), data_m, enc,
-    #                                               ori_data, continuous_cols)
-    # return ARMSE,AMAE,Acc
-    return ARMSE, AMAE
+            if cur_r < r_M:
+                # print("RMSE:{}".format(cur_r))
+                # x = code.detach()
+                impute_data = reconvert_data(code, fields, value_cat, values, miss_data_x.copy(), data_m, enc)
+                impute_data = pd.DataFrame(impute_data)
+                impute_data.columns = values
+                b_e = epoch
+                r_M = cur_r
+    print(b_e)
+    return impute_data.values

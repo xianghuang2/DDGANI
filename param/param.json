@@ -7,17 +7,23 @@
 	"categorical_cols": [],
 	"top_k": 0.05,
 	"lr":0.001,
-	"epochs":10000,
+	"epochs":5000,
+	"steps_per_epoch":4,
 	"model_name":"minmax",
 	"loss_weight": {
-		"Res_weight": 10,
+		"VAE_Res_weight": 100,
+		"VAE_G_weight": 1,
+		"VAE_D_weight": 1,
+		"BCE_weight": 1,
+		"Res_weight": 100,
 		"L_weight": 0.1,
 		"D_weight": 0.2,
 		"G_D_weight": 1,
 		"FD_weight": 1
 	},
 	"use_Learner": "True",
-	"use_FD": "False"
+	"use_FD": "False",
+	"fd_cols": []
 },
 	{	"name":"wireless",
 	"file_path":"dataset/numical datasets/wireless.csv",
@@ -26,9 +32,14 @@
 	"categorical_cols": [],
 	"top_k": 0.05,
 	"lr":0.001,
-	"epochs":10000,
+	"epochs":5000,
+	"steps_per_epoch":4,
 	"model_name":"minmax",
 	"loss_weight": {
+		"VAE_Res_weight": 100,
+		"VAE_G_weight": 5,
+		"VAE_D_weight": 1,
+		"BCE_weight": 0.1,
 		"Res_weight": 100,
 		"L_weight": 0.1,
 		"D_weight": 0.1,
@@ -36,7 +47,8 @@
 		"G_D_weight": 1
 	},
 	"use_Learner": "True",
-	"use_FD": "False"
+	"use_FD": "False",
+	"fd_cols": []
 },
 	{	"name":"spam",
 	"file_path":"dataset/numical datasets/spam.csv",
@@ -45,17 +57,23 @@
 	"categorical_cols": [],
 	"top_k": 0.05,
 	"lr":0.001,
-	"epochs":10000,
+	"epochs":5000,
+	"steps_per_epoch":4,
 	"model_name":"minmax",
 	"loss_weight": {
+		"VAE_Res_weight": 100,
+		"VAE_G_weight": 5,
+		"VAE_D_weight": 1,
 		"Res_weight": 10,
+		"BCE_weight": 0.1,
 		"L_weight": 0.1,
 		"D_weight": 0.1,
 		"G_D_weight": 1,
 		"FD_weight": 1
 	},
 	"use_Learner": "True",
-	"use_FD": "False"
+	"use_FD": "False",
+	"fd_cols": []
 	},
 	{	"name":"adult",
 	"file_path":"dataset/mix datasets/adult.csv",
@@ -63,10 +81,15 @@
 	"categorical_cols": [1, 3, 4, 5, 6, 7, 8, 9, 13],
 	"top_k": 0.05,
 	"lr":0.0001,
-	"epochs":5000,
+	"epochs":1000,
+	"steps_per_epoch":1,
 	"batch_size":128,
     "model_name":"minmax",
 	"loss_weight": {
+		"VAE_Res_weight": 1000,
+		"VAE_G_weight": 1,
+		"VAE_D_weight": 1,
+		"BCE_weight": 1,
 		"Res_weight": 100,
 		"L_weight": 0.1,
 		"D_weight": 0.1,
@@ -74,8 +97,12 @@
 		"FD_weight": 1
 	},
 	"use_Learner": "True",
-	"use_FD": "True"
-},
+	"use_FD": "True",
+	"fd_cols": [3,4],
+	"dcs": "¬(t0.education!=t1.education∧t0.education-num=t1.education-num^t0.native-country=t1.native-country);¬(t0.education=t1.education∧t0.education-num!=t1.education-num^t0.native-country=t1.native-country)",
+	"dco": "¬(t0.education!=t1.education∧t0.education-num=t1.education-num^t0.native-country=t1.native-country);¬(t0.education=t1.education∧t0.education-num!=t1.education-num^t0.native-country=t1.native-country)",
+	"dcr":  "¬(t0.education!=t1.education∧t0.education-num=t1.education-num^t0.native-country=t1.native-country);¬(t0.education=t1.education∧t0.education-num!=t1.education-num^t0.native-country=t1.native-country)"
+	},
 	{	"name":"hospital",
 	"file_path":"dataset/mix datasets/hospital.csv",
 		"T": 6,
@@ -84,8 +111,13 @@
 	"top_k": 0.05,
 	"lr":0.001,
 	"epochs":1000,
+	"steps_per_epoch":4,
 	"model_name":"minmax",
 	"loss_weight": {
+		"VAE_Res_weight": 100,
+		"VAE_G_weight": 1,
+		"VAE_D_weight": 0.1,
+		"BCE_weight": 1,
 		"Res_weight": 100,
 		"L_weight": 1.0,
 		"D_weight": 1,
@@ -93,8 +125,12 @@
 		"G_D_weight": 1
 	},
 	"use_Learner": "True",
-	"use_FD": "True"
-},
+	"use_FD": "True",
+	"fd_cols": [0, 1, 2, 3, 4, 5, 6],
+	"dcs": "¬(t0.HospitalName=t1.HospitalName∧t0.City!=t1.City);¬(t0.City=t1.City∧t0.State!=t1.State);¬(t0.HospitalName=t1.HospitalName∧t0.State!=t1.State);¬(t0.HospitalName=t1.HospitalName∧t0.HospitalOwner!=t1.HospitalOwner);¬(t0.MeasureCode=t1.MeasureCode∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.MeasureCode!=t1.MeasureCode);¬(t0.MeasureCode=t1.MeasureCode∧t0.MeasureName!=t1.MeasureName)",
+	"dco": "¬(t0.City=t1.City∧t0.State!=t1.State);¬(t0.HospitalName=t1.HospitalName∧t0.State!=t1.State);¬(t0.MeasureCode=t1.MeasureCode∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.MeasureCode!=t1.MeasureCode);¬(t0.MeasureCode=t1.MeasureCode∧t0.MeasureName!=t1.MeasureName);¬(t0.HospitalName=t1.HospitalName∧t0.City=t1.City∧t0.HospitalOwner!=t1.HospitalOwner)",
+	"dcr":	"¬(t0.City=t1.City∧t0.State!=t1.State);¬(t0.HospitalName=t1.HospitalName∧t0.State!=t1.State);¬(t0.City=t1.City^t0.HospitalName=t1.HospitalName∧t0.HospitalOwner!=t1.HospitalOwner);¬(t0.MeasureCode=t1.MeasureCode∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.Condition!=t1.Condition);¬(t0.MeasureName=t1.MeasureName∧t0.MeasureCode!=t1.MeasureCode);¬(t0.MeasureCode=t1.MeasureCode∧t0.MeasureName!=t1.MeasureName)"
+	},
 	{	"name":"tax",
 	"file_path":"dataset/mix datasets/Tax.csv",
 	"T": 6,
@@ -103,8 +139,13 @@
 	"top_k": 0.05,
 	"lr":0.001,
 	"epochs":1000,
+	"steps_per_epoch":4,
 	"model_name":"minmax",
 	"loss_weight": {
+		"VAE_Res_weight": 100,
+		"VAE_G_weight": 1,
+		"VAE_D_weight": 1,
+		"BCE_weight": 1,
 		"Res_weight": 100,
 		"L_weight": 1.0,
 		"D_weight": 1,

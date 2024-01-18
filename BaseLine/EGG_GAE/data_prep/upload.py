@@ -46,12 +46,12 @@ def loader(**kwargs):
 
     elif kwargs['dataset'] == "hospital":  # Binary classification dataset with categorical data, if you pass AdultCat, the numerical columns will be discretized.
         data = pd.read_csv(f'{dir_path}/data/hospital/hospital.csv')
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
     elif kwargs['dataset'] == "tax":
         data = pd.read_csv(f'{dir_path}/data/tax/tax.csv')
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
     elif kwargs['dataset'] == 'phishing_website':
@@ -74,26 +74,27 @@ def loader(**kwargs):
         X_test = np.array(data_test.drop(columns=['clase']))
 
     elif kwargs['dataset'] == 'wine':
+        a = f'{dir_path}/data/wine/wine.csv'
         data = pd.read_csv(f'{dir_path}/data/wine/wine.csv', index_col=0)
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
 
     elif kwargs['dataset'] == 'spam':
         data = pd.read_csv(f'{dir_path}/data/spam/spam.csv')
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
 
     elif kwargs['dataset'] == 'wireless':
         data = pd.read_csv(f'{dir_path}/data/wireless/wireless.csv')
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
 
     elif kwargs['dataset'] == 'adult':
         data = pd.read_csv(f'{dir_path}/data/adult/adult.csv')
-        data = data.sample(frac=1, random_state=42)
+        # data = data.sample(frac=1, random_state=42)
         y = np.array(data['clase'])
         X = np.array(data.drop(columns=['clase']))
 

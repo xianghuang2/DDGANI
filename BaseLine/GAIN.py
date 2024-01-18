@@ -15,9 +15,9 @@ def sample_batch_index(total, batch_size):
     return batch_idx
 def xavier_init(size):
     in_dim = size[0]
-    xavier_stddev = 1. / tf.sqrt(in_dim / 2.)  # tf.sqrt()函数用于返回指定张量元素的平方根
+    xavier_stddev = 1. / tf.sqrt(in_dim / 2.)
     return tf.random_normal(shape=size, stddev=xavier_stddev)
-def gain(data_m, data_x, con_cols, cat_cols, gain_parameters,value_cat, enc, values, param, device):
+def gain(data_m, data_x, con_cols, gain_parameters,value_cat, enc, values, device):
     # System parameters
     batch_size = gain_parameters['batch_size']
     hint_rate = gain_parameters['hint_rate']
@@ -30,10 +30,11 @@ def gain(data_m, data_x, con_cols, cat_cols, gain_parameters,value_cat, enc, val
     cat_to_code_data, enc = categorical_to_code(attention_impute_data.copy(), value_cat, enc)
     cat_to_code_data.columns = [x for x in range(cat_to_code_data.shape[1])]
     fields, feed_data = Data_convert(cat_to_code_data, "minmax", con_cols)
+
     M_tensor = get_M_by_data_m(data_m, fields, device)
     M_numpy = M_tensor.cpu().numpy()
     impute_data_code = torch.tensor(feed_data.values, dtype=torch.float).to(device)
-    zero_feed_data_code = impute_data_code * M_tensor  # 为0的data
+    zero_feed_data_code = impute_data_code * M_tensor
     _, code_dim = zero_feed_data_code.shape
     X_numpy = impute_data_code.cpu().numpy()
     # Hidden state dimensions
@@ -81,7 +82,6 @@ def gain(data_m, data_x, con_cols, cat_cols, gain_parameters,value_cat, enc, val
         inputs = tf.concat(values=[x, m], axis=1)
         G_h1 = tf.nn.relu(tf.matmul(inputs, G_W1) + G_b1)
         G_h2 = tf.nn.relu(tf.matmul(G_h1, G_W2) + G_b2)
-        # 对数值用sigmod,类别用softmax
 
         G_prob = tf.nn.sigmoid(tf.matmul(G_h2, G_W3) + G_b3)
         return G_prob
@@ -147,14 +147,13 @@ def gain(data_m, data_x, con_cols, cat_cols, gain_parameters,value_cat, enc, val
     return impute_data.values
 
 
-def get_GAIN_filled(data_m, miss_data, con_cols, cat_cols,value_cat, enc, values, device):
+def get_GAIN_filled(data_m, nan_data, con_cols, cat_cols,value_cat, enc, values, device):
     gain_parameters = {'batch_size':128,
                        'hint_rate': 0.5,
                        'alpha': 100,
                        'iterations': 1000}
-    # 初始化填充
-    fill_mean_data = Mean.fill_data_mean(miss_data, con_cols, cat_cols)
-    filled_numpy = gain(data_m, fill_mean_data, con_cols, cat_cols, gain_parameters,value_cat, enc, values, gain_parameters, device)
+    fill_mean_data = Mean.fill_data_mean(nan_data, con_cols)
+    filled_numpy = gain(data_m, fill_mean_data, con_cols, gain_parameters,value_cat, enc, values, device)
     return filled_numpy
 
 

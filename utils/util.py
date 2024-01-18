@@ -10,7 +10,8 @@ import torch.nn.functional as F
 import random
 from model.Learner import train_L_code
 from sklearn.preprocessing import OrdinalEncoder
-
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 
 # 传入Input_data，将数据-属性上最小值/max-min * 2 - 1
 def normalization(data, parameters=None):
@@ -77,19 +78,19 @@ def Data_convert(data, model_name, continuous_cols):
     return fields, feed_data
 
 
-# 传入impute_data，最初的数据，M，属性类别名列表value_L，数值类型列表
-def errorLoss(imputed_data, ori_data, M, value_cat, continuous_cols, enc):
 
+# "Pass in the 'impute_data', the initial dataset, 'M', a list of attribute category names under 'value_cat', and a list for numeric types."
+def errorLoss(imputed_data, ori_data, M, value_cat, continuous_cols, enc):
     copy_ori_data = ori_data.copy()
     copy_imputed_data = imputed_data.copy()
     no, dim = copy_imputed_data.shape
     H = np.ones((no, dim))
-    # H在数值类型数据全设为0
+    # 'H' is set to 0 for all numeric type data.
     for i in continuous_cols:
         H[:, i] = 0
-    # data_h类别类型上数据保持为缺失状态，数值上数据全为1
+    # In 'data_h', categorical data remains missing, while numeric data is set to 1
     data_h = 1 - (1 - M) * H
-    # data_m数值上的保持为缺失状态，类别上数据全为1
+    # In 'data_m', numeric data remains missing, while categorical data is set to 1.
     data_m = 1 - (1 - M) * (1 - H)
 
     if len(value_cat) != 0:
@@ -103,28 +104,11 @@ def errorLoss(imputed_data, ori_data, M, value_cat, continuous_cols, enc):
     data_m = data_m.astype(float)
     ori_data = ori_data.astype(float)
     ori_data = np.nan_to_num(ori_data)
-    # cate_imputed_data表示类别上的数据
-    cate_imputed_data = imputed_data * (1 - data_h)
-    cate_ori_data = ori_data * (1 - data_h)
-    Z = (cate_imputed_data == cate_ori_data)
-    Z = Z.astype('int')
-    Z = 1 - Z
 
-    # 对数值数据进行归一化为[-1,1]
+    # Numeric data is normalized to a range of [-1, 1].
     ori_data, norm_parameters = normalization(ori_data)
     imputed_data, _ = normalization(imputed_data, norm_parameters)
-    # data_m = M.astype(float)
-    cur_num = (1 - data_m) * ori_data - (1 - data_m) * imputed_data
-    CORR = cur_num ** 2
-    # RMSE = np.sqrt(np.sum(CORR) / np.sum(1 - data_m) + 1e-5)
 
-    nominator = np.sum(CORR) + np.sum(Z)
-    # Only for missing values
-    denominator = np.sum(1 - M)
-    rmse = np.sqrt(nominator / float(denominator))
-    mse = nominator / float(denominator)
-    # print("类别损失为：{}  数值损失为：{}".format(np.sum(Z), np.sum(CORR)))
-    # 遍历每一列求其RMSE或者MAE
     ARMSE = 0
     AMAE = 0
     miss_dim = 0
@@ -137,8 +121,8 @@ def errorLoss(imputed_data, ori_data, M, value_cat, continuous_cols, enc):
                 continue
             AR = np.sqrt(np.sum((1 - data_i_m) * ((ori_get_data - imputed_get_data) ** 2)) / np.sum(1 - data_i_m))
             ARMSE = ARMSE + AR
-            MAR = np.sum((1 - data_i_m) * np.abs(ori_get_data - imputed_get_data)) / np.sum(1 - data_i_m)
-            AMAE = AMAE + MAR
+            MAE = np.sum((1 - data_i_m) * np.abs(ori_get_data - imputed_get_data)) / np.sum(1 - data_i_m)
+            AMAE = AMAE + MAE
             miss_dim = miss_dim + 1
         else:
             data_i_h = data_h[:, i]
@@ -146,14 +130,12 @@ def errorLoss(imputed_data, ori_data, M, value_cat, continuous_cols, enc):
                 continue
             equal = (ori_get_data != imputed_get_data).astype('int')
             AR = (np.sum((1 - data_i_h) * equal) / np.sum(1 - data_i_h))
-            MAR = np.sum((1 - data_i_h) * equal) / np.sum(1 - data_i_h)
+            MAE = np.sum((1 - data_i_h) * equal) / np.sum(1 - data_i_h)
             ARMSE = ARMSE + AR
-            AMAE = AMAE + MAR
+            AMAE = AMAE + MAE
             miss_dim = miss_dim + 1
-        # if AR > 1:
-        #     print(1)
-    ARMSE = ARMSE / dim
-    AMAE = AMAE / dim
+    ARMSE = ARMSE / miss_dim
+    AMAE = AMAE / miss_dim
     return ARMSE,AMAE
 
 def errorLoss_fd(imputed_data, ori_data, M, value_cat, continuous_cols, enc, fd_cols):
@@ -257,11 +239,11 @@ def reconvert_data(x_, fields, value_cat, values, miss_data_x, data_m, enc):
     current_data.columns = values
 
     if value_cat:
-        for column in miss_data_x.columns:
-            random_value = "Null"
-            while random_value == "Null":
-                random_value = random.choice(miss_data_x[column])
-            miss_data_x[column] = miss_data_x[column].replace("Null", random_value)
+        # for column in miss_data_x.columns:
+        #     random_value = "Null"
+        #     while random_value == "Null":
+        #         random_value = random.choice(miss_data_x[column])
+        #     miss_data_x[column] = miss_data_x[column].replace("Null", random_value)
         # current_data = labelCode(current_data, value_cat, enc)  # current_data解码后的具体数值，分类的转为int类型
         miss_data_x = labelCode(miss_data_x, value_cat, enc)
         current_data = concatValue(current_data, miss_data_x, data_m)  # 获取Imputed Data
@@ -714,14 +696,16 @@ def sort_corr(corr_map):
         sort_dict[index] = sorted_indices
     return sort_dict
 
-# 根据随机选择对元组进行排序数值属性然后选择一些连续的元组并在这些属性的其他属性上随机注入缺失值元组；
-def MAR(data, continuous_cols):
+# Randomly order tuples based on a selected numerical attribute, then choose a sequence of continuous tuples.
+# Randomly inject missing values into other attributes of these tuples.
+def MAR(data, continuous_cols, miss_seed):
+    np.random.seed(miss_seed)
     new_data = data.copy()
     choose_num_index = np.random.choice(continuous_cols)
     sorted_indices = np.argsort(new_data.iloc[:, choose_num_index])
     sorted_data = new_data.iloc[sorted_indices]
-    # sorted_data[:,:] =0
-    # 计算需要注入缺失值的元组数量
+
+    # Calculate the number of tuples that need missing values injected
     mar_missing_count = int(len(sorted_data) * 0.4)
     start_index = np.random.randint(0, len(sorted_data) - mar_missing_count + 1)
     selected_data = sorted_data[start_index:start_index + mar_missing_count]
@@ -729,30 +713,24 @@ def MAR(data, continuous_cols):
     mask[:,choose_num_index] = False
     mask = pd.DataFrame(mask,index=selected_data.index, columns=selected_data.columns)
     selected_data[mask] = np.nan
-    # row_index = selected_data.index
+
     sorted_data[start_index:start_index + mar_missing_count] = selected_data
     df = sorted_data.sort_index()
     data_m = np.zeros(df.shape)
-    # 遍历df中的每一行数据
+    # Iterate through each row in the DataFrame
     for index, row in df.iterrows():
-        # 遍历每个位置的值
+        # Iterate through values at each position
         for i, value in enumerate(row):
-            # 判断值是否为NaN
+            # Check if the value is NaN
             if pd.isna(value):
                 data_m[index, i] = 0
             else:
                 data_m[index, i] = 1
-    # random_col = np.random.randint(data_m.shape[1])
-    # # 将该列的值设置为1
-    # data_m[:, random_col] = 1
     return data_m
-    # 选择一些连续的元组，并在这些元组的其他属性上随机注入缺失值
-  #  mar_indices = np.random.choice(len(sorted_data), size=mar_missing_count, replace=False)
-   # mar_data = sorted_data[mar_indices]
-   # mar_data[:, 1:] = np.random.choice([np.nan, 0], size=(mar_missing_count, data.shape[1] - 1), p=[0.2, 0.8])
 
 
-def MNAR(data, continuous_cols, categorical_cols):
+def MNAR(data, continuous_cols, categorical_cols, miss_seed):
+    np.random.seed(miss_seed)
     mnar_data = data.copy()
     data_m = np.ones(mnar_data.values.shape)
     for i in range(mnar_data.shape[1]):
@@ -785,7 +763,8 @@ def MNAR(data, continuous_cols, categorical_cols):
 
 
 
-def Region(data):
+def Region(data, miss_seed):
+    np.random.seed(miss_seed)
     data_numpy = data.values
     total_elements = data_numpy.size
     missing_elements = int(total_elements * 0.2)
@@ -807,22 +786,30 @@ def Region(data):
     return data_m
 
 
-def get_down_acc(impute_data_code, label_data, val_data, label_num, device, value_cat, continuous_cols, enc):
-    val_x = val_data.iloc[:, :-1]
-    impute_data_code.columns = val_x.columns
-    train_data = pd.concat([impute_data_code, val_x], axis=0)
+def get_down_acc(impute_data_code, label_data, test_data, value_cat, continuous_cols, enc, seed):
+    test_x = test_data.iloc[:, :-1]
+    impute_data_code.columns = test_x.columns
+    train_data = pd.concat([impute_data_code, test_x], axis=0)
     cat_to_code_data, enc = categorical_to_code(train_data.copy(), value_cat, enc)
     cat_to_code_data.columns = [x for x in range(cat_to_code_data.shape[1])]
     fields_1,  x = Data_convert(cat_to_code_data, "mean_std", continuous_cols)
-    x = torch.tensor(x.values, dtype=torch.float).to(device)
+    x = x.values
+
     x_train = x[:impute_data_code.shape[0], :]
-    y_train = torch.FloatTensor(label_data.values).to(device)
-    x_val = x[impute_data_code.shape[0]:, :]
-    val_y = val_data.iloc[:, -1]
-    y_val = torch.FloatTensor(val_y.values).to(device)
-    epoch = 1000
-    _, acc = train_L_code(epoch, x_train, y_train, x_val, y_val, label_num, device)
-    return acc
+    y_train = label_data.values.ravel()
+
+    x_test = x[impute_data_code.shape[0]:, :]
+    y_test = test_data.iloc[:, -1].values
+
+    # Training a RandomForest Classifier
+    classifier = RandomForestClassifier(random_state=seed)
+    classifier.fit(x_train, y_train)
+
+    # Predicting the test set results
+    y_pred = classifier.predict(x_test)
+
+    # Calculating the accuracy
+    accuracy = accuracy_score(y_test, y_pred)
+    return accuracy
 
 
-# def get_code_to_acc()

@@ -38,6 +38,11 @@ def data_pipeline(dataset_name, experiment_name,
 
     # Save prepared dataset
     assert (y_val == y_test).all()
+    con_cols = []
+    cols = [i for i in range(X_train.shape[1])]
+    for col in cols:
+        if col not in cat_cols:
+            con_cols.append(col)
     #assert (mask_val = mask_test).all()
     
     # Mask_train and mask_test have to be the same
@@ -54,5 +59,5 @@ def data_pipeline(dataset_name, experiment_name,
                 num_idx=num_idx, cat_idx=cat_idx, dataset_name=dataset_name, cat_dims=cat_dims, \
                 X_train_deg_freq = X_train_freq, X_val_deg_freq = X_val_freq, X_test_deg_freq = X_test_freq,
                 experiment_name=experiment_name, mean = mean, scale = scale)
-    return mean,scale
+    return mean,scale,cat_idx, con_cols
 

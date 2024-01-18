@@ -15,10 +15,10 @@ def get_Diff_acc_RMSE(nan_data, path, miss_rate, miss_data, enc, data_m, categor
     pathMiss = path + 'miss_data_{}.csv'.format(miss_rate)
     corr_map = get_attr_map_Null_kendall(pathMiss, data_m, categorical_cols, continuous_cols)
     sort_corr_dict = sort_corr(corr_map)
-    attention_data = Mean.fill_data_mean(nan_data, continuous_cols, categorical_cols)
+    attention_data = Mean.fill_data_mean(nan_data, continuous_cols)
     attention_impute_data = pd.DataFrame(attention_data,columns=values)
     if args.UseAttention == 'True':
-        attention_impute_data, impute_code = init_attn_2(corr_map, miss_data, data_m, categorical_cols, enc,
+        attention_impute_data, impute_code = init_attn_2(corr_map,  attention_impute_data, data_m, categorical_cols, enc,
                                                                     value_cat, device, param['top_k'])
         attention_impute_data.to_csv(path + 'Attention_Input_miss_data_{}.csv'.format(miss_rate), index=None)
         attention_impute_data = pd.read_csv(path + 'Attention_Input_miss_data_{}.csv'.format(miss_rate))
@@ -52,9 +52,9 @@ def get_Diff_acc_RMSE(nan_data, path, miss_rate, miss_data, enc, data_m, categor
     Discriminator = Discriminator_model.D(input_dim, latent_dim, d_input_dim)
     Discriminator_denoise_x = Discriminator_model.Discriminator_noise_x(input_dim * 2, latent_dim, d_input_dim,num_steps + 1)
     Generator_x0 = Diffusion.Generator_x0(input_dim, input_dim * 2, input_dim, num_steps + 1, fields)
-    ARMSE,AMAE = Diffusion.train_diffusion_discriminator(Discriminator, Generator_x0, Discriminator_denoise_x, FD_model_list,
+    impute_data = Diffusion.train_diffusion_discriminator(Discriminator, Generator_x0, Discriminator_denoise_x, FD_model_list,
                                             num_steps, param["epochs"], param["lr"], param['batch_size'], param["loss_weight"], data_m,
                                             impute_data_code, label_data, fields, value_cat, values,
                                             attention_impute_data, enc, ori_data, continuous_cols, label_num, device,
                                             args.UseLearner)
-    return ARMSE,AMAE
+    return impute_data
