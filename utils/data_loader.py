@@ -13,24 +13,23 @@ import util
 
 
 # 生成随机的矩阵
-def binary_sampler(p, rows, cols, k):
-    # if k == 0:
-    #     np.random.seed(42)
-    # else:
-    #     np.random.seed(2)
+def binary_sampler(p, rows, cols, miss_seed):
+    np.random.seed(miss_seed)
     uni_random_matrix = np.random.uniform(0., 1., size=[rows, cols])
     binary_random_matrix = 1 * (uni_random_matrix < p)
     data1 = DataFrame(binary_random_matrix, index=None)
-    # data1.to_csv('data/what_0.csv', index=False)  # 哪些是替换的
     return binary_random_matrix
 
 
 # Load missing data
-def data_loader(file_name, miss_rate, categorical_cols, label, miss_type, k):
+def data_loader(file_name, miss_rate, categorical_cols, label, miss_type, miss_seed):
     # Load data
     data_x = pd.read_csv(file_name)
+    all_data = data_x.copy().iloc[:, :-1]
     columns = data_x.columns
     n = len(data_x)
+    train_data, test_data = train_test_split(data_x, test_size=0.2, random_state=miss_seed)
+    data_x = train_data
     data_x = data_x.sample(frac=1).reset_index(drop=True)
     label_column = data_x.iloc[:, -1]
     con_cols = []
@@ -42,17 +41,19 @@ def data_loader(file_name, miss_rate, categorical_cols, label, miss_type, k):
         if i not in categorical_cols:
             con_cols.append(i)
     if miss_type == "MCAR":
-        data_m = binary_sampler(1 - miss_rate, no, dim, k)
+        data_m = binary_sampler(1 - miss_rate, no, dim, miss_seed)
     elif miss_type == "MAR":
-        data_m = util.MAR(data_x, con_cols)
+        data_m = util.MAR(data_x, con_cols, miss_seed)
     elif miss_type == "MNAR":
-        data_m = util.MNAR(data_x, con_cols, categorical_cols)
+        data_m = util.MNAR(data_x, con_cols, categorical_cols, miss_seed)
     elif miss_type == "Region":
-        data_m = util.Region(data_x)
+        data_m = util.Region(data_x, miss_seed)
     true_data = [i for i in range(len(data_m)) if all(val == 1 for val in data_m[i])]
     if len(true_data) == 0:
         true_data = None
+        true_label = None
     else:
+        true_label = label_column.loc[true_data]
         true_data = data_x.loc[true_data]
     sim_data_x = data_x.copy()
     sim_data_x[data_m == 0] = np.nan
@@ -63,7 +64,7 @@ def data_loader(file_name, miss_rate, categorical_cols, label, miss_type, k):
             miss_data_x.iloc[:, i].fillna(0, inplace=True)
         else:
             miss_data_x.iloc[:, i].fillna("Null", inplace=True)
-    return data_x, miss_data_x, data_m, pd.DataFrame(label_column), true_data, con_cols, nan_data
+    return data_x, miss_data_x, data_m, pd.DataFrame(label_column), true_data, true_label, con_cols, nan_data, test_data, all_data
 
 
 # 获取数据的类别属性列以及数值列

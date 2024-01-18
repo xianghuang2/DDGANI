@@ -141,7 +141,7 @@ def preprocess_data(X, y, cat_cols,
             test_size=val_size,    
             # Train validation can be not fixed though
             random_state=data_split_seed,
-            stratify=y)
+            )
 
 
         X_deg_train, X_deg_train_freq, mask_train,\

@@ -55,7 +55,7 @@ class notMIWAE:
         self.batch_pointer = 0
         self.eps = np.finfo(float).eps
 
-        print("Creating graph...")
+
         tf.reset_default_graph()
 
         # ---- input
@@ -465,13 +465,11 @@ class notMIWAE:
                 print(exception)
 
     def save(self, name):
-        print("Saving session...")
         self.saver.save(self.sess, name)
 
     def load(self, name):
-        print("Restoring session...")
         self.saver.restore(self.sess, name)
-        print("Session restored from global step ", self.sess.run(self.global_step))
+
 
     @staticmethod
     def gauss_loss(x, s, mu, log_sig2):

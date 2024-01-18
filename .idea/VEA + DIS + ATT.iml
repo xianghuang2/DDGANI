@@ -9,16 +9,24 @@
       <sourceFolder url="file://$MODULE_DIR$/DC_impute" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/param" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test_main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hyperimpute-main" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.9.18 (sftp://Xianger123@10.126.62.76:22/home/Xianger123/anaconda3/envs/pytorch1110/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.10.12 (sftp://Xianger123@10.126.62.76:22/home/Xianger123/anaconda3/envs/egg_exp/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/BaseLine/hyperimpute_main" />
+        <option value="$MODULE_DIR$/BaseLine/not_MIWAE" />
+      </list>
+    </option>
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/Djiango/templates" />
         <option value="$MODULE_DIR$/utils" />
-        <option value="$MODULE_DIR$/bseline" />
+        <option value="$MODULE_DIR$/BaseLine/notMIWAE-master" />
       </list>
     </option>
   </component>

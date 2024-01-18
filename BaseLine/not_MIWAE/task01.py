@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 import os
 import sys
+
+import tensorflow as tf
 sys.path.append(os.getcwd())
 from MIWAE import MIWAE
 from notMIWAE import notMIWAE
@@ -39,8 +41,8 @@ n_hidden = 128
 n_samples = 20
 max_iter = 1000
 batch_size = 16
-L = 10000
-
+L = 1000
+tf.random.set_seed(42)
 # ---- choose the missing model
 # mprocess = 'linear'
 # mprocess = 'selfmasking'

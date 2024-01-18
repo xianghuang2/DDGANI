@@ -39,10 +39,11 @@ class L(nn.Module):
         out = self.softmax(out)
         return out
 
+
 def train_L_code(epoch, x_train, y_train, x_valid, y_valid, label_num, device):
     torch.manual_seed(3407)
     net = L(x_train.size()[1], label_num).to(device)
-    optimizer_L = optim.SGD(net.parameters(), lr=0.001)
+    optimizer_L = optim.SGD(net.parameters(), lr=0.01)
     criterion = nn.CrossEntropyLoss()
     for epo in range(epoch):
         if epo != epoch-1:
@@ -50,7 +51,6 @@ def train_L_code(epoch, x_train, y_train, x_valid, y_valid, label_num, device):
         else:
             outputs = net(x_train)
         loss = criterion(outputs, y_train.squeeze().long())
-
         if epo != epoch-1:
             optimizer_L.zero_grad()
             loss.backward()

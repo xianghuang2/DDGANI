@@ -6,6 +6,7 @@ from scipy import optimize
 
 
 def MNAR(data, continuous_cols, categorical_cols):
+    np.random.seed(42)
     mnar_data = data.numpy().copy()
     mnar_data = pd.DataFrame(mnar_data)
     data_m = np.ones(mnar_data.values.shape)
@@ -14,30 +15,16 @@ def MNAR(data, continuous_cols, categorical_cols):
             mask = np.random.choice([True, False], size=data_m.shape[0], p=[0.2, 0.8])
             data_m[mask, i] = 0
         else:
-            # 计算中位数
             median = np.median(mnar_data.iloc[:, i])
-            # 生成布尔掩码
             indices_below_median = np.where(mnar_data.iloc[:, i] <= median)
             num_indices = len(indices_below_median[0])
             num_to_change = int(num_indices * 0.4)
             random_indices = np.random.choice(indices_below_median[0], num_to_change, replace=False)
-            # 将这些索引的值置为0
             data_m[random_indices, i] = 0
-            # 将小于中位数的数据以0.4的概率变为0
-            # data_m[mask & (mnar_data[:, i] < median)] = 0
-    # 找出所有0的位置
-    # zero_positions = np.where(data_m == 0)
 
-    # 选择50%的位置
-    # num_zeros = len(zero_positions[0])
-    # num_to_change = int(num_zeros * 0.2)
-    # random_indices = np.random.choice(num_zeros, num_to_change, replace=False)
-
-    # 将这些位置的值改为1
-    # data_m[zero_positions[0][random_indices], zero_positions[1][random_indices]] = 1
     return torch.Tensor(data_m)
 
-def introduce_missingness(X, p_miss, def_fill_val, mecha="MCAR", seed=0, p_obs=0.3):
+def introduce_missingness(X, p_miss, def_fill_val, cat_cols, mecha="MCAR", seed=42):
     """
     Generate missing values for specifics missing-data mechanism and proportion of missing values. 
     
@@ -64,54 +51,47 @@ def introduce_missingness(X, p_miss, def_fill_val, mecha="MCAR", seed=0, p_obs=0
     'X_incomp': the data with the generated missing values.
     'mask': a matrix indexing the generated missing values.s
     """
-    
+
     to_torch = torch.is_tensor(X) ## output a pytorch tensor, or a numpy array
     if not to_torch:
         X = X.astype(np.float32)
         X = torch.from_numpy(X)
-    
+    con_cols = []
+    cols = [i for i in range(X.shape[1])]
+    for i in cols:
+        if i not in cat_cols:
+            con_cols.append(i)
     if mecha == "MCAR":
         mask = torch.Tensor(1 - MCAR_mask(X, p_miss=p_miss, seed=seed)).type(torch.int32)
-        # mask2 = Region(X, p_miss).double()
     elif mecha == "MAR":
-        mask = 1 - MAR_mask(X, [4, 7,8]).type(torch.int32)
+        mask = 1 - MAR_mask(X, con_cols).type(torch.int32)
     elif mecha == "MNAR":
         # mask = MNAR_mask_logistic(X, p_miss, p_obs, seed=seed).double()
-        mask = 1 - MNAR(X,[7,8],  [0, 1, 2, 3, 5, 6]).type(torch.int32)
+        mask = 1 - MNAR(X, con_cols, cat_cols).type(torch.int32)
     elif mecha == "Region":
         mask = 1 - Region(X, p_miss).type(torch.int32)
     else:
         pass
     X_nas = X.clone()
     X_nas[mask.bool()] = def_fill_val
-    
-    
-    # MCAR, MAR_mask, MNAR_mask_logistic produces a mask with
-    # 1 if missed and 0 if observed
-    # Later I assume 1 for observed and 0 for missed
     mask = 1 - mask
     a = mask.numpy()
     
     return X_nas.double().numpy(), mask.numpy()
 
 def Region(X, p):
+    np.random.seed(42)
     data_numpy = X.numpy()
     total_elements = data_numpy.size
     missing_elements = int(total_elements * 0.2)
-
-    # 计算可能的最大区域
     max_rows = missing_elements
     max_cols = 1
-
     while max_rows > data_numpy.shape[0]:
         max_rows //= 2
         max_cols = missing_elements // max_rows
-
-    # 随机选择起始位置
     start_row = np.random.randint(0, data_numpy.shape[0] - max_rows + 1)
     start_col = np.random.randint(0, data_numpy.shape[1] - max_cols + 1)
     data_m = np.ones((data_numpy.shape[0],data_numpy.shape[1]))
-    # 将选定区域设置为np.nan
     data_m[start_row:start_row + max_rows, start_col:start_col + max_cols] = 0
     return torch.Tensor(data_m)
 
@@ -250,14 +230,13 @@ def RMSE(X, X_true, mask):
 
 ##### Missing At Random ######
 def MAR_mask(X, continuous_cols):
+    np.random.seed(42)
     x = X.numpy()
     x = pd.DataFrame(x)
     new_data = x.copy()
     choose_num_index = np.random.choice(continuous_cols)
     sorted_indices = np.argsort(new_data.iloc[:, choose_num_index])
     sorted_data = new_data.iloc[sorted_indices]
-    # sorted_data[:,:] =0
-    # 计算需要注入缺失值的元组数量
     mar_missing_count = int(len(sorted_data) * 0.4)
     start_index = np.random.randint(0, len(sorted_data) - mar_missing_count + 1)
     selected_data = sorted_data[start_index:start_index + mar_missing_count]
@@ -269,128 +248,15 @@ def MAR_mask(X, continuous_cols):
     sorted_data[start_index:start_index + mar_missing_count] = selected_data
     df = sorted_data.sort_index()
     data_m = np.zeros(df.shape)
-    # 遍历df中的每一行数据
     for index, row in df.iterrows():
-        # 遍历每个位置的值
         for i, value in enumerate(row):
-            # 判断值是否为NaN
             if pd.isna(value):
                 data_m[index, i] = 0
             else:
                 data_m[index, i] = 1
-    # random_col = np.random.randint(data_m.shape[1])
-    # # 将该列的值设置为1
-    # data_m[:, random_col] = 1
     return torch.Tensor(data_m)
-    # 选择一些连续的元组，并在这些元组的其他属性上随机注入缺失值
-# def MAR_mask(X, con_cols):
-#     """
-#     Missing at random mechanism with a logistic masking model. First, a subset of variables with *no* missing values is
-#     randomly selected. The remaining variables have missing values according to a logistic model with random weights,
-#     re-scaled so as to attain the desired proportion of missing values on those variables.
-#
-#     Parameters
-#     ----------
-#     X : torch.DoubleTensor or np.ndarray, shape (n, d)
-#         Data for which missing values will be simulated. If a numpy array is provided,
-#         it will be converted to a pytorch tensor.
-#
-#     p : float
-#         Proportion of missing values to generate for variables which will have missing values.
-#
-#     p_obs : float
-#         Proportion of variables with *no* missing values that will be used for the logistic masking model.
-#
-#     Returns
-#     -------
-#     mask : torch.BoolTensor or np.ndarray (depending on type of X)
-#         Mask of generated missing values (True if the value is missing).
-# def MAR(data, continuous_cols):
-#     new_data = data.copy()
-#     choose_num_index = np.random.choice(continuous_cols)
-#     sorted_indices = np.argsort(new_data.iloc[:, choose_num_index])
-#     sorted_data = new_data.iloc[sorted_indices]
-#     # sorted_data[:,:] =0
-#     # 计算需要注入缺失值的元组数量
-#     mar_missing_count = int(len(sorted_data) * 0.4)
-#     start_index = np.random.randint(0, len(sorted_data) - mar_missing_count + 1)
-#     selected_data = sorted_data[start_index:start_index + mar_missing_count]
-#     mask = np.random.choice([True, False], size=selected_data.shape, p=[0.5, 0.5])
-#     mask[:,choose_num_index] = False
-#     selected_data.loc[mask] = np.nan
-#     # row_index = selected_data.index
-#     sorted_data[start_index:start_index + mar_missing_count] = selected_data
-#     df = sorted_data.sort_index()
-#     data_m = np.zeros(df.shape)
-#     # 遍历df中的每一行数据
-#     for index, row in df.iterrows():
-#         # 遍历每个位置的值
-#         for i, value in enumerate(row):
-#             # 判断值是否为NaN
-#             if pd.isna(value):
-#                 data_m[index, i] = 0
-#             else:
-#                 data_m[index, i] = 1
-#     return data_m
-#     """
-#     # torch.manual_seed(seed)
-#     # n, d = X.shape
-#     #
-#     # to_torch = torch.is_tensor(X) ## output a pytorch tensor, or a numpy array
-#     # if not to_torch:
-#     #     X = torch.from_numpy(X)
-#     #
-#     # mask = torch.zeros(n, d).bool() if to_torch else np.zeros((n, d)).astype(bool)
-#     #
-#     # d_obs = max(int(p_obs * d), 1) ## number of variables that will have no missing values (at least one variable)
-#     # d_na = d - d_obs ## number of variables that will have missing values
-#     #
-#     # ### Sample variables that will all be observed, and those with missing values:
-#     #
-#     # idxs_obs = np.random.choice(d, d_obs, replace=False)
-#     # idxs_nas = np.array([i for i in range(d) if i not in idxs_obs])
-#     #
-#     # ### Other variables will have NA proportions that depend on those observed variables, through a logistic model
-#     # ### The parameters of this logistic model are random.
-#     #
-#     # ### Pick coefficients so that W^Tx has unit variance (avoids shrinking)
-#     # coeffs = pick_coeffs(X, idxs_obs, idxs_nas, seed=seed)
-#     # ### Pick the intercepts to have a desired amount of missing values
-#     # intercepts = fit_intercepts(X[:, idxs_obs], coeffs, p, seed=seed)
-#     #
-#     # ps = torch.sigmoid(X[:, idxs_obs].mm(coeffs) + intercepts)
-#     #
-#     # ber = torch.rand(n, d_na)
-#     # mask[:, idxs_nas] = ber < ps
-#     x = X.numpy()
-#     x = pd.DataFrame(x)
-#     new_data = x.copy()
-#     choose_num_index = np.random.choice(con_cols)
-#     sorted_indices = np.argsort(new_data.iloc[:, choose_num_index])
-#     sorted_data = new_data.iloc[sorted_indices]
-#     # sorted_data[:,:] =0
-#     # 计算需要注入缺失值的元组数量
-#     mar_missing_count = int(len(sorted_data) * 0.4)
-#     start_index = np.random.randint(0, len(sorted_data) - mar_missing_count + 1)
-#     selected_data = sorted_data[start_index:start_index + mar_missing_count]
-#     mask = np.random.choice([True, False], size=selected_data.shape, p=[0.5, 0.5])
-#     mask[:, choose_num_index] = False
-#     selected_data.loc[mask] = np.nan
-#     # row_index = selected_data.index
-#     sorted_data[start_index:start_index + mar_missing_count] = selected_data
-#     df = sorted_data.sort_index()
-#     data_m = np.zeros(df.shape)
-#     # 遍历df中的每一行数据
-#     for index, row in df.iterrows():
-#         # 遍历每个位置的值
-#         for i, value in enumerate(row):
-#             # 判断值是否为NaN
-#             if pd.isna(value):
-#                 data_m[index, i] = 0
-#             else:
-#                 data_m[index, i] = 1
-#
-#     return torch.tensor(data_m)
+
+
 
 ##### Missing not at random ######
 

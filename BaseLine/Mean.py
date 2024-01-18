@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def fill_data_mean(miss_data, con_cols, cat_cols):
+def fill_data_mean(miss_data, con_cols):
     for i in range(miss_data.shape[1]):
         if i in con_cols:
             miss_data[:, i] = mean_fill(miss_data[:, i])

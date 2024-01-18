@@ -71,7 +71,6 @@ class Network(nn.Module):
         # Initial number of values
         self.n_ = x.shape[0]
         y = y.squeeze(0)
-
         # Imputation mode
         transformedCatData = []
         for col, dense_mapper in zip(self.cfgDataloader.imputation.cat_idx, self.CatEmb):

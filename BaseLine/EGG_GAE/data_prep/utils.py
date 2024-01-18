@@ -38,6 +38,7 @@ def missingness_pipeline(X,
         X=X.copy(), 
         p_miss=p_miss, 
         mecha=miss_algo,
+        cat_cols=cat_cols,
         def_fill_val=def_fill_val, 
         seed=miss_seed, 
         ) 

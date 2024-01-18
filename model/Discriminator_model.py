@@ -114,5 +114,18 @@ class Discriminator_noise_x(nn.Module):
         x = self.sigmoid(x)
         return x
 
+def train_discriminator(optimizer, generate_x, discriminator, x, zero_feed_code, M_tensor, m_data, loss_weight):
+    optimizer.zero_grad()
+    decoder_z_impute = zero_feed_code + (1 - M_tensor) * generate_x
+    # a = decoder_z_impute.cpu().detach().numpy()
+    discriminator_z_pro = discriminator(decoder_z_impute)
+    discriminator_z_loss = -torch.mean(
+        m_data * torch.log(discriminator_z_pro + 1e-8) + (1 - m_data) * torch.log(
+            1. - discriminator_z_pro + 1e-8))
+    discriminator_loss = discriminator_z_loss * loss_weight['VAE_D_weight']
+    discriminator_loss.backward()
+    optimizer.step()
+    return discriminator_z_loss
+
 
 
