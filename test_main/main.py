@@ -114,8 +114,8 @@ if __name__ == "__main__":
         device = torch.device('cuda:0')
     else:
         device = torch.device('cpu')
-    all_ARMSE, all_AMAE, all_ACC = 0, 0, 0
-    ARMSE_list, AMAE_list, ACC_list, fd_list = [],[],[],[]
+    all_ARMSE, all_AMAE = 0, 0
+    ARMSE_list, AMAE_list, fd_list = [],[],[]
 
     # run 5 times
     for k in range(5):
@@ -166,24 +166,19 @@ if __name__ == "__main__":
         # cat_to_code_data, enc = categorical_to_code(ori_data.copy(), value_cat, enc)
         ARMSE, AMAE = util.errorLoss(fill_data, ori_data, data_m, value_cat, continuous_cols, enc)
 
-        # Calculate ACC
-        Accuracy = util.get_down_acc(fill_data, label_data, test_data, value_cat, continuous_cols, enc, seed)
-        # if k == 0:
-        #     continue
-        print("数据集为：{}, ARMSE为：{:.4f}, AMAE为:{:.4f}, 下游任务准确率为：{:.4f}".format(data_name, ARMSE, AMAE, Accuracy))
+
+        print("数据集为：{}, ARMSE为：{:.4f}, AMAE为:{:.4f}".format(data_name, ARMSE, AMAE))
 
         #EGG-GAE : run run.py. We design consistent random seeds to ensure consistency of missing data
         ARMSE_list.append(ARMSE)
         AMAE_list.append(AMAE)
-        ACC_list.append(Accuracy)
 
         all_ARMSE = all_ARMSE + ARMSE
         all_AMAE = all_AMAE + AMAE
-        all_ACC = all_ACC + Accuracy
-    ARMSE, AMAE, Accuracy = all_ARMSE / 5., all_AMAE/5., all_ACC/5.
-    ARMSE_std, AMAE_std, ACC_std= statistics.pstdev(ARMSE_list), statistics.pstdev(AMAE_list), statistics.pstdev(ACC_list)
-    print("dataset：{}， missrate：{}， misstype：{}，ARMSE：{:.4f}±{:.4f}，AMAE：{:.4f}±{:.4f}, ACC: {:.4f}±{:.4f}, Use_A: {}, Use_L:{}, Use_FD:{}".format(
-                data_name, miss_rate, miss_type, ARMSE, ARMSE_std, AMAE, AMAE_std, Accuracy, ACC_std,use_A, use_L,use_FD))
+    ARMSE, AMAE = all_ARMSE / 5., all_AMAE/5.
+    ARMSE_std, AMAE_std= statistics.pstdev(ARMSE_list), statistics.pstdev(AMAE_list)
+    print("dataset：{}， missrate：{}， misstype：{}，ARMSE：{:.4f}±{:.4f}，AMAE：{:.4f}±{:.4f}, Use_A: {}, Use_L:{}, Use_FD:{}".format(
+                data_name, miss_rate, miss_type, ARMSE, ARMSE_std, AMAE, AMAE_std, use_A, use_L,use_FD))
 
 
 
