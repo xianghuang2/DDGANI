@@ -1,0 +1,1001 @@
+HospitalName,City,State,HospitalOwner,Condition,MeasureCode,MeasureName,Score,Sample,EmergencyService
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99,179,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1,8,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98,81,yes
+yukon kuskokwim delta reg hospital,bethel,ak,government - federal,heart attack,ami-1,heart attack patients given aspirin at arrival,0,0,no
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98,229,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97,239,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99,240,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.8,20,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,1,1,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1,51,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98,270,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1,4,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,1,18,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97,159,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,1,46,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,0.94,123,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1,126,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.53,19,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1,8,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.67,3,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1,6,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98,155,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-1,heart attack patients given aspirin at arrival,0,1,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99,86,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.95,111,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,1,134,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,1,7,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98,185,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.6,5,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1,11,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97,33,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.9,10,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.77,13,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-1,heart attack patients given aspirin at arrival,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.92,24,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-1,heart attack patients given aspirin at arrival,0.5,4,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1,11,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97,208,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.6,5,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96,73,yes
+yukon kuskokwim delta reg hospital,bethel,ak,government - federal,heart attack,ami-2,heart attack patients given aspirin at discharge,0,0,no
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.98,260,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96,295,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-2,heart attack patients given aspirin at discharge,0.98,316,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.6,5,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1,1,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1,1,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1,26,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.99,516,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1,1,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,1,12,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96,247,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,0.95,39,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.99,134,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1,145,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.5,16,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1,6,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.67,3,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1,1,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1,323,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-2,heart attack patients given aspirin at discharge,1,1,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97,91,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.92,165,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,1,282,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1,2,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97,290,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.5,2,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1,5,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1,4,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.92,13,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,1,3,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1,4,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-2,heart attack patients given aspirin at discharge,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.9,10,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-2,heart attack patients given aspirin at discharge,0.67,3,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1,7,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,30,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,3,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93,14,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85,41,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91,70,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91,87,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,2,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.57,3,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96,71,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,1,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93,43,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91,11,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.89,18,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,25,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.5,2,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97,77,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,22,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.79,24,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,53,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,2,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93,72,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.67,3,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75,4,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,1,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,2,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,98,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,29,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,131,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,147,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,63,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,3,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,244,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,1,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,103,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,14,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,68,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,79,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.33,6,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,2,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,2,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,135,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,58,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,119,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.97,65,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,122,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,3,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,4,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.5,4,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0,0,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1,1,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.97,169,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,6,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.93,67,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96,242,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.99,288,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.97,331,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,5,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,1,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,23,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.99,441,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,2,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.82,11,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96,227,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95,41,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95,117,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,125,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.6,15,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.83,6,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.33,3,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,3,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,301,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-5,heart attack patients given beta blocker at discharge,0,1,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96,96,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95,173,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,254,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,3,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.98,281,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,2,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.83,6,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,5,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.86,14,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,4,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.75,4,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-5,heart attack patients given beta blocker at discharge,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.92,13,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.67,3,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1,8,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,1,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,1,1,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.68,25,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.88,8,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,1,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,2,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,2,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,0,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0,1,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.83,36,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,no
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.87,15,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.98,47,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.85,48,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.72,40,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.98,61,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.4,5,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.83,12,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,1,16,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.82,44,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.5,16,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.4,15,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.96,27,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.85,26,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+southwest alabama medical center,thomasville,al,government - federal,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,no
+northwest medical center,winfield,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0,0,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,0.86,210,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.91,57,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,1,121,no
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.87,142,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.94,316,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.78,110,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.83,35,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.84,19,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.99,158,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.78,455,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,1,2,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.96,70,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.87,67,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.79,217,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,0.89,76,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.47,211,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,1,268,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.53,51,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.93,55,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.74,38,yes
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.97,35,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.72,264,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-1,heart failure patients given discharge instructions,0.04,26,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-1,heart failure patients given discharge instructions,0.83,146,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,1,259,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.45,430,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.5,24,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.82,527,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.98,59,no
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.66,79,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.96,75,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.8,114,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.77,78,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.91,65,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-1,heart failure patients given discharge instructions,1,79,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.54,137,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-1,heart failure patients given discharge instructions,0,34,no
+northwest medical center,winfield,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.9,48,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,246,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98,61,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.91,139,no
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,157,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98,372,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.96,681,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,160,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94,48,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.89,28,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,200,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,342,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,514,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,3,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,82,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94,85,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.97,259,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,94,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,259,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,350,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.63,59,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.84,80,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.8,46,yes
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98,42,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.95,303,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.72,39,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98,150,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,292,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.9,518,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.85,34,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,570,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.87,76,no
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.96,94,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94,93,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,149,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,105,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,87,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.89,91,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99,164,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.38,39,no
+northwest medical center,winfield,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1,59,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97,71,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,33,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.86,21,no
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9,49,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.98,130,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94,343,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9,69,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9,10,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75,4,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97,37,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91,165,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,94,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,34,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.89,19,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.82,84,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94,36,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93,69,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,90,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.67,6,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.78,27,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.78,18,yes
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,10,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.98,102,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75,8,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96,84,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85,146,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,98,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,7,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.92,272,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.64,14,no
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94,18,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94,18,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.92,39,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85,46,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1,30,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.88,25,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96,75,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.25,4,no
+northwest medical center,winfield,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85,13,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,48,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,13,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,32,no
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,41,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,130,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,69,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.94,34,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,15,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,4,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,42,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,110,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,62,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0,0,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,15,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,16,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,53,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,15,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,70,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,85,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.75,8,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,10,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.8,10,yes
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,12,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,51,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0,5,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,45,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,77,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.99,93,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.43,7,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,101,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,8,no
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.94,32,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.96,27,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,41,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,12,no
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,9,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.88,17,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.97,38,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,2,no
+northwest medical center,winfield,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1,14,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97,235,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97,37,yes
+andalusia regional hospital,andalusia,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1,77,no
+stringfellow memorial hospital,anniston,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97,110,yes
+st vincents east,birmingham,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87,125,yes
+university of alabama hospital,birmingham,al,government - state,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.74,247,yes
+callahan eye foundation hospital,birmingham,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0,0,yes
+marshall medical center south,boaz,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97,172,yes
+cherokee medical center,centre,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93,44,yes
+chilton medical center,clanton,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.89,47,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1,155,yes
+flowers hospital,dothan,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1,166,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93,191,yes
+elba general hospital,elba,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1,31,yes
+medical center enterprise,enterprise,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1,72,yes
+fayette medical center,fayette,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.45,117,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.9,174,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97,69,yes
+riverview regional medical center,gadsden,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.99,239,yes
+gadsden regional medical center,gadsden,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.96,255,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.9,39,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87,128,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.96,101,yes
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.98,44,yes
+crenshaw community hospital,luverne,al,government - federal,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.25,16,yes
+univ of south alabama medical center,mobile,al,government - state,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.71,7,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.85,243,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.94,99,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.74,92,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.92,114,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87,85,no
+dale medical center,ozark,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.85,80,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.94,116,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.89,150,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93,69,no
+community hospital inc,tallassee,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87,70,yes
+southwest alabama medical center,thomasville,al,government - federal,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.92,25,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.8,55,yes
+wedowee hospital,wedowee,al,government - local,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.25,28,no
+northwest medical center,winfield,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.91,66,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.91 ,57 ,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98 ,61 ,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,33 ,yes
+alaska regional hospital,anchorage,ak,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,13 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97 ,37 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,47 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.96 ,26 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,39 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-6,pneumonia patients given the most appropriate initial antibiotic(s),0.95 ,22 ,yes
+alaska regional hospital,anchorage,ak,proprietary,pneumonia,pn-7,pneumonia patients assessed and given influenza vaccination,0.90 ,29 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-card-2,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.87 ,106 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-inf-1,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.96 ,513 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-inf-2,surgery patients who were given the  right kind  of antibiotic to help prevent infection,0.98 ,521 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-inf-3,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),0.88 ,499 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-inf-4,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.94 ,146 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-inf-6,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),1.00 ,690 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-vte-1,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.94 ,226 ,yes
+alaska regional hospital,anchorage,ak,proprietary,surgical infection prevention,scip-vte-2,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery,0.94 ,223 ,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,6 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,8 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,46 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,10 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,11 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,134 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,51 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,8 ,no
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,1 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,18 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,126 ,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,4 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,1.00 ,7 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99 ,240 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99 ,179 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-1,heart attack patients given aspirin at arrival,0.99 ,86 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98 ,270 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98 ,81 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98 ,185 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98 ,229 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.98 ,155 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97 ,33 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97 ,159 ,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.97 ,239 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.95 ,111 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-1,heart attack patients given aspirin at arrival,0.94 ,123 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.92 ,24 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-1,heart attack patients given aspirin at arrival,0.90 ,10 ,no
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-1,heart attack patients given aspirin at arrival,0.80 ,20 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.77 ,13 ,no
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.67 ,3 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.60 ,5 ,no
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-1,heart attack patients given aspirin at arrival,0.53 ,19 ,no
+wedowee hospital,wedowee,al,government - local,heart attack,ami-1,heart attack patients given aspirin at arrival,0.50 ,4 ,no
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-1,heart attack patients given aspirin at arrival,0.00 ,1 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,1 ,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,1 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,6 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,7 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,4 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,3 ,no
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,5 ,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,1 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,282 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,4 ,no
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,26 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,323 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,1 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,12 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,145 ,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,1 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,1.00 ,2 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.99 ,516 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.99 ,134 ,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.98 ,260 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-2,heart attack patients given aspirin at discharge,0.98 ,316 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97 ,208 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97 ,91 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.97 ,290 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96 ,247 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96 ,295 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.96 ,73 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-2,heart attack patients given aspirin at discharge,0.95 ,39 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.92 ,13 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.92 ,165 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-2,heart attack patients given aspirin at discharge,0.90 ,10 ,yes
+wedowee hospital,wedowee,al,government - local,heart attack,ami-2,heart attack patients given aspirin at discharge,0.67 ,3 ,no
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.67 ,3 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-2,heart attack patients given aspirin at discharge,0.60 ,5 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-2,heart attack patients given aspirin at discharge,0.60 ,5 ,no
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.50 ,2 ,no
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-2,heart attack patients given aspirin at discharge,0.50 ,16 ,no
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,2 ,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,30 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,2 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,22 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,no
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,53 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,no
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,3 ,no
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,25 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,1 ,no
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,2 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97 ,77 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96 ,71 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93 ,43 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93 ,14 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93 ,72 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91 ,70 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91 ,11 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91 ,87 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.89 ,18 ,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85 ,41 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.79 ,24 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75 ,4 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.67 ,3 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.67 ,3 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.50 ,2 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-3,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.00 ,1 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,4 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,244 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,103 ,yes
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,2 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,2 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,131 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,14 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,98 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,29 ,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,63 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,1 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,58 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,3 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,119 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,122 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,147 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,3 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,135 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,79 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,1 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,1.00 ,68 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.97 ,65 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.50 ,4 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-4,heart attack patients given smoking cessation advice/counseling,0.33 ,6 ,no
+marshall medical center south,boaz,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,5 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,2 ,no
+hartselle medical center,hartselle,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,3 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,8 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,5 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,4 ,no
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,254 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,23 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,6 ,no
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,301 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,1 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,125 ,yes
+medical center enterprise,enterprise,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,2 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,1.00 ,3 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.99 ,441 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.99 ,288 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.98 ,281 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.97 ,169 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.97 ,331 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96 ,227 ,yes
+st vincents hospital,birmingham,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96 ,242 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.96 ,96 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95 ,41 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95 ,173 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.95 ,117 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.93 ,67 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.92 ,13 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.86 ,14 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.83 ,6 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.83 ,6 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.82 ,11 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.75 ,4 ,no
+wedowee hospital,wedowee,al,government - local,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.67 ,3 ,no
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.60 ,15 ,no
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.33 ,3 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart attack,ami-5,heart attack patients given beta blocker at discharge,0.00 ,1 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,1.00 ,1 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.88 ,8 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.68 ,25 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.00 ,1 ,yes
+northwest medical center,winfield,al,proprietary,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.00 ,1 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.00 ,2 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart attack,ami-7a,heart attack patients given fibrinolytic medication within 30 minutes of arrival,0.00 ,2 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,1.00 ,16 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.98 ,61 ,yes
+university of alabama hospital,birmingham,al,government - state,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.98 ,47 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.96 ,27 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.87 ,15 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.85 ,48 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.85 ,26 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.83 ,36 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.83 ,12 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.82 ,44 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.72 ,40 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.50 ,16 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.40 ,5 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart attack,ami-8a,heart attack patients given pci within 90 minutes of arrival,0.40 ,15 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,children s asthma care,cac-1,children who received reliever medication while hospitalized for asthma,1.00 ,9 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,children s asthma care,cac-1,children who received reliever medication while hospitalized for asthma,1.00 ,193 ,yes
+riverview regional medical center,gadsden,al,proprietary,children s asthma care,cac-1,children who received reliever medication while hospitalized for asthma,1.00 ,4 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,children s asthma care,cac-2,children who received systemic corticosteroid medication (oral and iv medication that reduces inflammation and controls symptoms) while hospitalized for asthma,1.00 ,9 ,yes
+riverview regional medical center,gadsden,al,proprietary,children s asthma care,cac-2,children who received systemic corticosteroid medication (oral and iv medication that reduces inflammation and controls symptoms) while hospitalized for asthma,1.00 ,4 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,children s asthma care,cac-2,children who received systemic corticosteroid medication (oral and iv medication that reduces inflammation and controls symptoms) while hospitalized for asthma,0.98 ,193 ,yes
+riverview regional medical center,gadsden,al,proprietary,children s asthma care,cac-3,children and their caregivers who received a home management plan of care document while hospitalized for asthma,1.00 ,4 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,children s asthma care,cac-3,children and their caregivers who received a home management plan of care document while hospitalized for asthma,0.33 ,9 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,children s asthma care,cac-3,children and their caregivers who received a home management plan of care document while hospitalized for asthma,0.14 ,193 ,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-1,heart failure patients given discharge instructions,1.00 ,79 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,1.00 ,257 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,1.00 ,2 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,1.00 ,121 ,no
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,1.00 ,268 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.99 ,158 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.98 ,59 ,no
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.97 ,35 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.96 ,75 ,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.96 ,70 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.94 ,316 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.93 ,55 ,yes
+northwest medical center,winfield,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.90 ,48 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,0.89 ,76 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.88 ,65 ,no
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.87 ,142 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.87 ,67 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-1,heart failure patients given discharge instructions,0.86 ,210 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.84 ,19 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-1,heart failure patients given discharge instructions,0.83 ,146 ,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.83 ,35 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.82 ,527 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.80 ,114 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.79 ,217 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.78 ,455 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.78 ,110 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.77 ,78 ,no
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.74 ,38 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.72 ,264 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-1,heart failure patients given discharge instructions,0.66 ,79 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-1,heart failure patients given discharge instructions,0.54 ,137 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.53 ,51 ,no
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.50 ,24 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-1,heart failure patients given discharge instructions,0.47 ,211 ,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-1,heart failure patients given discharge instructions,0.46 ,618 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-1,heart failure patients given discharge instructions,0.45 ,430 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-1,heart failure patients given discharge instructions,0.04 ,26 ,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-1,heart failure patients given discharge instructions,0.00 ,34 ,no
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,94 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,246 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,157 ,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,342 ,yes
+northwest medical center,winfield,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,59 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,292 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,3 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,570 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,87 ,no
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,200 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,259 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.00 ,350 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,149 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,514 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,160 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,105 ,no
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,164 ,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.99 ,82 ,yes
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98 ,42 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98 ,372 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.98 ,150 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.97 ,259 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.96 ,94 ,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.96 ,681 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.95 ,303 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94 ,93 ,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94 ,48 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.94 ,85 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.91 ,139 ,no
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.90 ,518 ,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.89 ,91 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.89 ,28 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.87 ,76 ,no
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.85 ,34 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.84 ,80 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.80 ,46 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.72 ,39 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.63 ,59 ,no
+wedowee hospital,wedowee,al,government - local,heart failure,hf-2,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.38 ,39 ,no
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,10 ,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,94 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,98 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,30 ,no
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,90 ,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,34 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.00 ,7 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.98 ,130 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.98 ,102 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97 ,71 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.97 ,37 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96 ,84 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.96 ,75 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94 ,36 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94 ,18 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94 ,18 ,yes
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.94 ,343 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.93 ,69 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.92 ,37 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.92 ,272 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.91 ,165 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.90 ,69 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.90 ,49 ,yes
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.90 ,10 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.89 ,19 ,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.88 ,25 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.86 ,21 ,no
+northwest medical center,winfield,al,proprietary,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85 ,13 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85 ,46 ,no
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.85 ,146 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.82 ,84 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.78 ,27 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.78 ,18 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75 ,8 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.75 ,4 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.67 ,6 ,no
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.64 ,14 ,no
+wedowee hospital,wedowee,al,government - local,heart failure,hf-3,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.25 ,4 ,no
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,41 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,110 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,53 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,8 ,no
+hartselle medical center,hartselle,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,12 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,10 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,69 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,15 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,48 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,41 ,yes
+flowers hospital,dothan,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,62 ,yes
+northwest medical center,winfield,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,14 ,yes
+univ of south alabama medical center,mobile,al,government - state,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,45 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,12 ,no
+cherokee medical center,centre,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,15 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,77 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,101 ,yes
+wedowee hospital,wedowee,al,government - local,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,2 ,no
+university of alabama hospital,birmingham,al,government - state,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,130 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,9 ,no
+cullman regional medical center,cullman,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,42 ,yes
+andalusia regional hospital,andalusia,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,32 ,no
+huntsville hospital,huntsville,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,51 ,yes
+gadsden regional medical center,gadsden,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,70 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,4 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,16 ,yes
+riverview regional medical center,gadsden,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,85 ,yes
+medical center enterprise,enterprise,al,proprietary,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,1.00 ,15 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.99 ,93 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.97 ,38 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.96 ,27 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.94 ,34 ,yes
+dale medical center,ozark,al,government - hospital district or authority,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.94 ,32 ,yes
+southwest alabama medical center,thomasville,al,government - federal,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.88 ,17 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.80 ,10 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.75 ,8 ,no
+st vincents blount,oneonta,al,voluntary non-profit - private,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.43 ,7 ,yes
+crenshaw community hospital,luverne,al,government - federal,heart failure,hf-4,heart failure patients given smoking cessation advice/counseling,0.00 ,5 ,yes
+flowers hospital,dothan,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1.00 ,166 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1.00 ,31 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1.00 ,155 ,yes
+andalusia regional hospital,andalusia,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1.00 ,77 ,no
+medical center enterprise,enterprise,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,1.00 ,72 ,yes
+riverview regional medical center,gadsden,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.99 ,239 ,yes
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.98 ,44 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97 ,172 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97 ,69 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97 ,235 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.97 ,110 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.96 ,509 ,yes
+gadsden regional medical center,gadsden,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.96 ,255 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.96 ,101 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.94 ,116 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.94 ,99 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93 ,191 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93 ,69 ,no
+cherokee medical center,centre,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.93 ,44 ,yes
+southwest alabama medical center,thomasville,al,government - federal,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.92 ,25 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.92 ,114 ,yes
+northwest medical center,winfield,al,proprietary,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.91 ,66 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.90 ,174 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.90 ,39 ,no
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.89 ,150 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.89 ,47 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87 ,85 ,no
+marshall medical center north,guntersville,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87 ,128 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87 ,125 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.87 ,70 ,no
+dale medical center,ozark,al,government - hospital district or authority,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.85 ,80 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.85 ,243 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.85 ,117 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.80 ,55 ,yes
+university of alabama hospital,birmingham,al,government - state,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.74 ,247 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.74 ,92 ,yes
+univ of south alabama medical center,mobile,al,government - state,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.71 ,7 ,yes
+crenshaw community hospital,luverne,al,government - federal,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.25 ,16 ,yes
+wedowee hospital,wedowee,al,government - local,pneumonia,pn-2,pneumonia patients assessed and given pneumococcal vaccination,0.25 ,28 ,no
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,30 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,110 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,102 ,yes
+flowers hospital,dothan,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,152 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,19 ,yes
+wedowee hospital,wedowee,al,government - local,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,14 ,no
+cullman regional medical center,cullman,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,138 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.00 ,41 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.99 ,149 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.99 ,496 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.99 ,78 ,yes
+northwest medical center,winfield,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.98 ,59 ,yes
+medical center enterprise,enterprise,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.98 ,49 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.97 ,120 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.97 ,95 ,no
+cherokee medical center,centre,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.97 ,33 ,yes
+riverview regional medical center,gadsden,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.97 ,196 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.96 ,131 ,yes
+southwest alabama medical center,thomasville,al,government - federal,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.96 ,24 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.96 ,103 ,yes
+gadsden regional medical center,gadsden,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.96 ,187 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.95 ,137 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.95 ,138 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.95 ,230 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.95 ,43 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.95 ,76 ,no
+marshall medical center north,guntersville,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.94 ,115 ,yes
+dale medical center,ozark,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.94 ,67 ,yes
+crenshaw community hospital,luverne,al,government - federal,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.93 ,15 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.93 ,91 ,yes
+university of alabama hospital,birmingham,al,government - state,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.92 ,378 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.92 ,36 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.91 ,129 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.89 ,125 ,yes
+univ of south alabama medical center,mobile,al,government - state,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.89 ,35 ,yes
+andalusia regional hospital,andalusia,al,proprietary,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.89 ,55 ,no
+st vincents blount,oneonta,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.83 ,103 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.78 ,64 ,no
+georgiana hospital,georgiana,al,voluntary non-profit - private,pneumonia,pn-3b,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.50 ,2 ,no
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,65 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,28 ,no
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,25 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,69 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,37 ,yes
+southwest alabama medical center,thomasville,al,government - federal,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,6 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,131 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,83 ,yes
+flowers hospital,dothan,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,77 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,67 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,47 ,no
+cherokee medical center,centre,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,20 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,12 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,59 ,yes
+university of alabama hospital,birmingham,al,government - state,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,169 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,90 ,yes
+andalusia regional hospital,andalusia,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,43 ,no
+gadsden regional medical center,gadsden,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,130 ,yes
+fayette medical center,fayette,al,voluntary non-profit - other,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,34 ,yes
+riverview regional medical center,gadsden,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,109 ,yes
+medical center enterprise,enterprise,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,1.00 ,24 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.99 ,107 ,yes
+northwest medical center,winfield,al,proprietary,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.98 ,40 ,yes
+marshall medical center south,boaz,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.97 ,98 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.97 ,79 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.97 ,294 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.94 ,65 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.94 ,80 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.94 ,16 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.91 ,74 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.91 ,34 ,yes
+community hospital inc,tallassee,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.90 ,41 ,no
+marion regional medical center,hamilton,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.90 ,42 ,yes
+dale medical center,ozark,al,government - hospital district or authority,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.87 ,39 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.83 ,29 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.80 ,5 ,no
+wedowee hospital,wedowee,al,government - local,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.67 ,6 ,no
+crenshaw community hospital,luverne,al,government - federal,pneumonia,pn-4,pneumonia patients given smoking cessation advice/counseling,0.33 ,9 ,yes
+northwest medical center,winfield,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,1.00 ,85 ,yes
+elba general hospital,elba,al,voluntary non-profit - other,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,1.00 ,40 ,yes
+dekalb regional medical center,fort payne,al,voluntary non-profit - church,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.99 ,88 ,yes
+flowers hospital,dothan,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.99 ,146 ,yes
+cullman regional medical center,cullman,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.99 ,160 ,yes
+medical center enterprise,enterprise,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.99 ,85 ,yes
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.98 ,51 ,yes
+helen keller memorial hospital,sheffield,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.98 ,192 ,yes
+chilton medical center,clanton,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.98 ,44 ,yes
+marion regional medical center,hamilton,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.98 ,121 ,yes
+st vincents blount,oneonta,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.98 ,105 ,yes
+marshall medical center north,guntersville,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,158 ,yes
+stringfellow memorial hospital,anniston,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,145 ,yes
+coosa valley medical center,sylacauga,al,voluntary non-profit - other,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,101 ,no
+community hospital inc,tallassee,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,71 ,no
+andalusia regional hospital,andalusia,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,93 ,no
+fayette medical center,fayette,al,voluntary non-profit - other,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,109 ,yes
+georgiana hospital,georgiana,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.97 ,36 ,no
+marshall medical center south,boaz,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.96 ,211 ,yes
+eliza coffee memorial hospital,florence,al,voluntary non-profit - other,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.96 ,200 ,yes
+southwest alabama medical center,thomasville,al,government - federal,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.96 ,24 ,yes
+shelby baptist medical center,alabaster,al,voluntary non-profit - church,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.96 ,239 ,yes
+east alabama medical center and snf,opelika,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.96 ,153 ,yes
+mizell memorial hospital,opp,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.95 ,87 ,no
+crenshaw community hospital,luverne,al,government - federal,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.95 ,21 ,yes
+st vincents east,birmingham,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.95 ,135 ,yes
+dale medical center,ozark,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.95 ,74 ,yes
+baptist medical center south,montgomery,al,voluntary non-profit - church,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.95 ,101 ,yes
+prattville baptist hospital,prattville,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.94 ,131 ,yes
+gadsden regional medical center,gadsden,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.94 ,266 ,yes
+huntsville hospital,huntsville,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.93 ,511 ,yes
+southeast alabama medical center,dothan,al,government - hospital district or authority,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.92 ,196 ,yes
+university of alabama hospital,birmingham,al,government - state,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.92 ,357 ,yes
+wedowee hospital,wedowee,al,government - local,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.90 ,30 ,no
+cherokee medical center,centre,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.89 ,56 ,yes
+jackson hospital & clinic inc,montgomery,al,voluntary non-profit - private,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.88 ,233 ,yes
+riverview regional medical center,gadsden,al,proprietary,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.87 ,261 ,yes
+g h lanier memorial hospital,valley,al,voluntary non-profit - other,pneumonia,pn-5c,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.82 ,50 ,yes
+hartselle medical center,hartselle,al,proprietary,pneumonia,pn-6,pneumonia patients given the most appropriate initial antibiotic(s),1.00 ,45 ,yes
